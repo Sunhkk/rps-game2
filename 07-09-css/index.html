@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            a{
+                color: #000;
+                text-decoration: none;
+                padding: 10px;
+            }
+            a:hover{
+                padding: 10px;
+                border: 1px solid #ddd;
+                background: green;
+            }
+            a:active{
+                color: red;
+            }
+            a:visited{
+                background: green;
+                color: greenyellow;
+            }
+            pp:hover{
+                text-decoration: underline;
+                background: purple;
+            }
+            /*
+            li:first-child{
+                background: yellow;
+            }
+            li:last-child{
+                background: greenyellow;
+            }
+                */
+            li:nth-child(odd){
+                background: pink;
+            }
+            
+            
+            /* 
+                :nth-child(even) - 짝수
+                :nth-child(odd) - 홀수
+                
+
+            */
+            /*
+            p:nth-child(odd){background: hotpink;}
+            */
+            p:nth-of-type(odd){background: hotpink;}
+
+            
+        </style>
+</head>
+
+<body>
+    <!-- 가상 클래스틑 요소 다음에 : 으로표시
+      -->
+    <a href="#">링크입니다.</a>
+    
+    <div>박스</div>
+    <p class="pp">문단</p>
+    <ol>
+        <li>신라면</li>
+        <li>삼양라면</li>
+        <li>맛있는라면</li>
+        <li>안성탕면</li>
+        <li>비빔면</li>
+    </ol>
+    <div>
+        <p>신라면1</p>
+        <p>신라면2</p>
+        <div>삼양하면</div>
+        <p>신라면3</p>
+        <p>신라면4</p>
+        <p>신라면5</p>
+    </div>
+   
+</body>
+</html>

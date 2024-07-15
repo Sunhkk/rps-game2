@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 60%;
+            height: 400px;
+            border: 1px solid #333;
+            position: relative;
+        }
+        /*
+        .box::before{
+            content: "박스1";
+            width: 50px;
+            height: 50px;
+            background: lightblue;
+            display: block;
+            position: absolute;
+        }
+        .box::after{
+            content: "박스2";
+            width: 50px;
+            height: 50px;
+            background: lightgreen;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+        }
+        */
+        .inbox{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgb(232, 211,0, 0.3);
+            top: 100px;
+            left: calc(60%-50px);
+            /* opacity: 0.3; */
+        }
+        h1{
+            text-align: center;
+            line-height: 150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        가상요소 -> 요소이름::가상요소
+    -->
+        <div class="box">
+            <p>
+                대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도 그 법률안은 법률로서 확정된다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다. 여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다. 행정각부의 설치·조직과 직무범위는 법률로 정한다. 국가는 전통문화의 계승·발전과 민족문화의 창달에 노력하여야 한다.
+            </p>
+            <div class="inbox">
+                <h1>inbox입니다.</h1>
+            </div>
+        </div>
+
+</body>
+</html>
